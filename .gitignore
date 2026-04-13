@@ -1,0 +1,8 @@
+agent/auth.json
+agent/sessions
+agent/.extmgr-cache
+
+**/node_modules
+
+exa-usage.json
+run-history.jsonl

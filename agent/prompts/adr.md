@@ -1,0 +1,1 @@
+Create an architecture decision record in ./docs/adr/ explaining the how and why of these changes. Focus on conveying context and meaning for future readers and ourselves. Where possible link out to areas of the code base that were altered, and GH issues releated to these changes.
