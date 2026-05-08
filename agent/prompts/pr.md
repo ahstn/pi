@@ -21,5 +21,10 @@ Use this section for review hints, explanations, discussion points, and follow-u
 
 ## Related Issues & Pull Requests
 
-<!-- If closing GitHub issues, reference these here. Add upstream, downstream or related pull requests for context -->
+<!-- 
+If closing GitHub issues, reference these here. 
+For issues, explicitly mention "Closes" or "Resolves" to auto-resolve the issue on PR merge.
+
+Add upstream, downstream or related pull requests for context.
+-->
 ```
