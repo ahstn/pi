@@ -27,6 +27,12 @@ https://pi.dev/packages
 - [pi-token-burden] - Claude-like context command with granular token counts per tool, mcp, etx
     - Alternatives: [pi-context]
 
+## Acknowledgements
+
+#### Feynman
+
+The `research-*` agents and [agent/prompts/deepresearch.md] prompt are copied from [getcompanion-ai/feynman].
+
 ## Global Skills
 
 [Agent Skills] located in `global-skills/` are less coding specific, thus designed for usage in other tools.
@@ -39,11 +45,12 @@ stow --target $HOME global-skills
 
 <!-- Reference Links -->
 
-[`.pi/agent/extensions/handoff.ts`]: ./.pi/agent/extensions/handoff.ts
-[`.pi/agent/extensions/notify.ts`]: ./.pi/agent/extensions/notify.ts
-[`.pi/agent/extensions/summarize.ts`]: ./.pi/agent/extensions/summarize.ts
-[`.pi/agent/pi-permissions.jsonc`]: ./.pi/agent/pi-permissions.jsonc
-[`.pi/agent/extensions/skill-autocomplete.ts`]: ./.pi/agent/extensions/skill-autocomplete.ts
+[`.pi/agent/extensions/handoff.ts`]: ./agent/extensions/handoff.ts
+[`.pi/agent/extensions/notify.ts`]: ./agent/extensions/notify.ts
+[`.pi/agent/extensions/summarize.ts`]: ./agent/extensions/summarize.ts
+[`.pi/agent/pi-permissions.jsonc`]: ./agent/pi-permissions.jsonc
+[`.pi/agent/extensions/skill-autocomplete.ts`]: ./agent/extensions/skill-autocomplete.ts
+[`.pi/agent/prompts/deepresearch.md`]: ./agent/prompts/deepresearch.md
 
 [badlogic/pi-mono]: https://github.com/badlogic/pi-mono
 [mitsuhiko/agent-stuff]: https://github.com/mitsuhiko/agent-stuff
@@ -53,6 +60,7 @@ stow --target $HOME global-skills
 [pi-context]: https://github.com/ttttmr/pi-context
 [pi-token-burden]: https://github.com/Whamp/pi-token-burden
 [agent skills]: https://agentskills.io/home
+[getcompanion-ai/feynman]: https://github.com/getcompanion-ai/feynman
 
 [tintinweb/pi-subagents]: https://x.com/nicht_tintin/status/2031119030224920979
 [pasky/pi-side-agents]: https://x.com/xpasky/status/2028273594782855267
