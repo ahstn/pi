@@ -17,6 +17,7 @@
       },
       "reviewer": {
         "model": "openai-codex/gpt-5.5",
+        "fallbackModels": ["opencode-zen/gpt-5.5"],
         "thinking": "medium"
       }
     }
