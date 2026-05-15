@@ -1,0 +1,4 @@
+{
+  "newLine": ["shift+enter", "ctrl+j"],
+  "tui.editor.deleteWordBackward": ["ctrl+w", "alt+backspace"]
+}
