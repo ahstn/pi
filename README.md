@@ -9,17 +9,18 @@
 
 #### From [badlogic/pi-mono]
 
-  - [`.pi/agent/extensions/handoff.ts`] - extract current session to a hand-off prompt and open it in a new session.
-  - [`.pi/agent/extensions/notify.ts`] - send desktop notifications when waiting for input
+- [`.pi/agent/extensions/handoff.ts`] - extract current session to a hand-off prompt and open it in a new session.
+- [`.pi/agent/extensions/notify.ts`] - send desktop notifications when waiting for input
 
 #### From [mitsuhiko/agent-stuff]
 
-  - [`.pi/agent/extensions/summarize.ts`] - summarize the current session/thread.
+- [`.pi/agent/extensions/summarize.ts`] - summarize the current session/thread.
 
 #### Personal
 
-  - [`.pi/agent/extensions/exa-websearch/`] - single Exa web/search contents tool with highlights-first results, deep search modes, summaries, and URL content retrieval.
-  - [`.pi/agent/extensions/skill-autocomplete.ts`] - press `$` in the editor to open an autocomplete menu of loaded skills.
+- [`.pi/agent/extensions/exa-websearch/`] - single Exa web/search contents tool with highlights-first results, deep search modes, summaries, and URL content retrieval.
+    - Alternative, with no API Key required and [kepano/defuddle] sanitization: [thinkscape/agent-smart-fetch]
+- [`.pi/agent/extensions/skill-autocomplete.ts`] - press `$` in the editor to open an autocomplete menu of loaded skills.
 
 ## Packages
 
@@ -67,6 +68,9 @@ stow --target $HOME global-skills
 [pi-token-burden]: https://github.com/Whamp/pi-token-burden
 [agent skills]: https://agentskills.io/home
 [getcompanion-ai/feynman]: https://github.com/getcompanion-ai/feynman
+[kepano/defuddle]: https://github.com/kepano/defuddle
+[thinkscape/agent-smart-fetch]: https://github.com/Thinkscape/agent-smart-fetch
+
 
 [tintinweb/pi-subagents]: https://x.com/nicht_tintin/status/2031119030224920979
 [pasky/pi-side-agents]: https://x.com/xpasky/status/2028273594782855267
