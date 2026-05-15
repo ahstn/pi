@@ -14,6 +14,7 @@
     - [`.pi/agent/extensions/summarize.ts`] - summarize the current session/thread.
 
 - Personal:
+    - [`.pi/agent/extensions/exa-websearch/`] - single Exa web/search contents tool with highlights-first results, deep search modes, summaries, and URL content retrieval.
     - [`.pi/agent/extensions/skill-autocomplete.ts`] - press `$` in the editor to open an autocomplete menu of loaded skills.
 
 ## Packages
@@ -49,6 +50,7 @@ stow --target $HOME global-skills
 [`.pi/agent/extensions/notify.ts`]: ./agent/extensions/notify.ts
 [`.pi/agent/extensions/summarize.ts`]: ./agent/extensions/summarize.ts
 [`.pi/agent/pi-permissions.jsonc`]: ./agent/pi-permissions.jsonc
+[`.pi/agent/extensions/exa-websearch/`]: ./agent/extensions/exa-websearch/
 [`.pi/agent/extensions/skill-autocomplete.ts`]: ./agent/extensions/skill-autocomplete.ts
 [`.pi/agent/prompts/deepresearch.md`]: ./agent/prompts/deepresearch.md
 

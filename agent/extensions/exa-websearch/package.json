@@ -3,9 +3,12 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "exa-js": "^1.8.20"
+    "exa-js": "^2.13.0",
+    "typebox": "^1.1.38"
   },
   "pi": {
-    "extensions": ["./index.ts"]
+    "extensions": [
+      "./index.ts"
+    ]
   }
 }
