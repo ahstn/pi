@@ -3,13 +3,16 @@
     "opencode-zen": {
       "baseUrl": "https://opencode.ai/zen/v1",
       "api": "openai-completions",
-      "apiKey": "OPENCODE_ZEN_API_KEY",
+      "apiKey": "$OPENCODE_ZEN_API_KEY",
       "models": [
         {
           "id": "claude-opus-4-6",
           "name": "Opus 4.6 (Zen)",
           "reasoning": true,
-          "input": ["text", "image"],
+          "input": [
+            "text",
+            "image"
+          ],
           "contextWindow": 200000,
           "maxTokens": 128000,
           "cost": {
@@ -25,13 +28,38 @@
       ]
     },
     "openrouter": {
+      "models": [
+        {
+          "id": "anthropic/claude-fable-5",
+          "name": "Claude Fable 5",
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "xhigh": "max"
+          },
+          "input": [
+            "text",
+            "image"
+          ],
+          "contextWindow": 200000,
+          "maxTokens": 128000,
+          "compat": {
+            "forceAdaptiveThinking": true
+          }
+        }
+      ],
       "modelOverrides": {
         "anthropic/claude-opus-4.7": {
           "contextWindow": 200000,
           "compat": {
             "openRouterRouting": {
-              "only": ["amazon-bedrock", "google-vertex"],
-              "order": ["amazon-bedrock", "google-vertex"]
+              "only": [
+                "amazon-bedrock",
+                "google-vertex"
+              ],
+              "order": [
+                "amazon-bedrock",
+                "google-vertex"
+              ]
             }
           }
         }
