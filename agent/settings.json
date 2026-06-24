@@ -1,6 +1,6 @@
 {
   "defaultThinkingLevel": "medium",
-  "lastChangelogVersion": "0.79.1",
+  "lastChangelogVersion": "0.79.9",
   "defaultProvider": "openai-codex",
   "defaultModel": "gpt-5.5",
   "packages": [
@@ -18,9 +18,28 @@
       "reviewer": {
         "model": "openai-codex/gpt-5.5",
         "fallbackModels": [
+          "github-copilot/gpt-5.5",
           "opencode-zen/gpt-5.5"
         ],
         "thinking": "medium"
+      },
+      "planner": {
+        "model": "openai-codex/gpt-5.5"
+      },
+      "worker": {
+        "model": "openai-codex/gpt-5.5"
+      },
+      "context-builder": {
+        "model": "openai-codex/gpt-5.5"
+      },
+      "researcher": {
+        "model": "openai-codex/gpt-5.5"
+      },
+      "delegate": {
+        "model": "openai-codex/gpt-5.5"
+      },
+      "oracle": {
+        "model": "openai-codex/gpt-5.5"
       }
     }
   },
