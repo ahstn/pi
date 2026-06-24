@@ -1,0 +1,7 @@
+[settings]
+dotfiles.root = "~/.pi"
+dotfiles.default_mode = "symlink"
+
+[dotfiles]
+"~/.agents/skills" = { source = "skills", mode = "symlink-each" }
+"~/.claude/skills" = { source = "skills", mode = "symlink-each" }

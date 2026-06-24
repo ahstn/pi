@@ -1,7 +1,10 @@
 agent/auth.json
+agent/trust.json
 agent/sessions
 agent/bin
 agent/.extmgr-cache
+memory/
+npm/
 
 **/node_modules
 

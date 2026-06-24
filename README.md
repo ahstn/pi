@@ -41,12 +41,27 @@ The `research-*` agents and [agent/prompts/deepresearch.md] prompt are copied fr
 
 ## Global Skills
 
-[Agent Skills] located in `global-skills/` are less coding specific, thus designed for usage in other tools.
+[Agent Skills] located in `skills/` are less coding specific, and are designed for usage across multiple tools.
 
-Intended usage of these is with GNU Stow:
+This repo uses [mise] dotfiles to link each skill into both shared and Claude-specific global skill directories:
 
 ```sh
-stow --target $HOME global-skills
+mise dotfiles apply
+```
+
+The relevant config lives in [`mise.toml`](./mise.toml):
+
+```toml
+[dotfiles]
+"~/.agents/skills" = { source = "skills", mode = "symlink-each" }
+"~/.claude/skills" = { source = "skills", mode = "symlink-each" }
+```
+
+Alternatively, install skills with the [Skills CLI]:
+
+```sh
+npx skills add <owner>/<repo>
+npx skills add <owner>/<repo> --skill code-review-and-quality
 ```
 
 <!-- Reference Links -->
@@ -66,7 +81,9 @@ stow --target $HOME global-skills
 [nicobailon/pi-subagents]: https://github.com/nicobailon/pi-subagents
 [pi-context]: https://github.com/ttttmr/pi-context
 [pi-token-burden]: https://github.com/Whamp/pi-token-burden
-[agent skills]: https://agentskills.io/home
+[agent skills]: https://skills.sh/
+[Skills CLI]: https://skills.sh/
+[mise]: https://mise.jdx.dev/
 [getcompanion-ai/feynman]: https://github.com/getcompanion-ai/feynman
 [kepano/defuddle]: https://github.com/kepano/defuddle
 [thinkscape/agent-smart-fetch]: https://github.com/Thinkscape/agent-smart-fetch
