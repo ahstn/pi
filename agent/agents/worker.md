@@ -1,8 +1,6 @@
 ---
 name: worker
 description: General-purpose subagent with full capabilities, isolated context
-model: openai-codex/gpt-5.3-codex
-fallbackModels: github-copilot/gpt-5.3-codex
 thinking: high
 defaultProgress: true
 maxSubagentDepth: 2
