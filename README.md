@@ -60,8 +60,8 @@ The relevant config lives in [`mise.toml`](./mise.toml):
 Alternatively, install skills with the [Skills CLI]:
 
 ```sh
-npx skills add <owner>/<repo>
-npx skills add <owner>/<repo> --skill code-review-and-quality
+npx skills add ahstn/pi
+npx skills add ahstn/pi --skill code-review-and-quality
 ```
 
 <!-- Reference Links -->
